@@ -48,3 +48,16 @@ window.addEventListener('load', () => {
         })
     };
 });
+
+const fullscreen = document.querySelector('.fullscreen');
+
+fullscreen.addEventListener('click' , () =>{
+    if(!document.fullscreenElement){
+        document.documentElement.requestFullscreen();
+        document.getElementById('fullscreenIcon').src = './svg/compress-arrows-alt-solid.svg';
+    }
+    else{ 
+        document.exitFullscreen();
+        document.getElementById('fullscreenIcon').src = './svg/fullscreen.svg';
+    }
+});

@@ -26,6 +26,15 @@ header p{
     font-size: 20px;
 }
 
+.fullscreen{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 3%;
+    height: 5%;
+}
+
 .pads{
     background: lightblue;
     width: 100%;
